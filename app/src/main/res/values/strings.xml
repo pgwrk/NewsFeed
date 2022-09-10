@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NewsFeed</string>
+    <string name="retry">Retry</string>
+    <string name="no_data">No data</string>
 </resources>
