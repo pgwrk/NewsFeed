@@ -78,13 +78,12 @@ private fun ErrorScreen(
             textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.padding(0.dp))
+        Spacer(modifier = Modifier.padding(8.dp))
 
         OutlinedButton(
             onClick = onRetry,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp)
         ) {
             Text(
                 text = stringResource(id = R.string.retry),

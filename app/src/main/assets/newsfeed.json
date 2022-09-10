@@ -1,0 +1,45 @@
+{
+  "feed": [
+    {
+      "id":1,
+      "title":"Apple event product news — iPhone 14, Apple Watch 8, AirPods Pro 2 and more",
+      "description":"Forget the rumors — we've now seen the iPhone 14, Apple Watch 8 and AirPods Pro 2 in the flesh. Here's the details on what Apple announced..."
+    },
+    {
+      "id":2,
+      "title":"iPhone 14 and iPhone 14 Plus",
+      "description":"iPhone 14 and iPhone 14 Plus. 6.1” and 6.7” sizes. All-day battery life. Emergency SOS via satellite. Crash Detection. Epic photos. 5 colors."
+
+    },
+    {
+      "id":3,
+      "title":"iPhone 14 Pro, Galaxy Z Fold Show How Apple, Samsung Are Rethinking Phones",
+      "description":"Commentary: Apple's Dynamic Island and Samsung's foldables underline how these companies are trying to change the way we interact with our..."
+    },
+    {
+      "id":4,
+      "title":"Should I upgrade to the iPhone 14 now or wait for the iPhone 15? Here are the top 3 reasons to sit tight and save your money",
+      "description":"Every year, the world's most valuable company refreshes its most important product. Apple typically announces new iPhone models every..."
+    },
+    {
+      "id":5,
+      "title":"Samsung can’t stop talking about the iPhone 14, and it’s getting a little creepy",
+      "description":"Even before the iPhone 14 was announced on Wednesday, Samsung was already mocking Apple for the lack of “innovation” in the new iPhone..."
+    },
+    {
+      "id":6,
+      "title":"iPhone 14 Pro and iPhone 14 Pro Max",
+      "description":"iPhone 14 Pro. Introducing Dynamic Island. Vital new safety features designed to save lives. A 48MP camera for up to 4x the resolution. 4 colors."
+    },
+    {
+      "id":7,
+      "title":"4 Things We Didn't Get With the iPhone 14",
+      "description":"No notch. A 48MP camera. An autofocus selfie cam. These are all Apple iPhone 14 rumors that turned out to be true, with Apple's latest..."
+    },
+    {
+      "id":8,
+      "title":"Is the iPhone 14 worth it?",
+      "description":"CUPERTINO, Calif. — Apple has invented a new reason to upgrade your iPhone: fear. There was an awful lot of discussion at the iPhone 14..."
+    }
+  ]
+}
