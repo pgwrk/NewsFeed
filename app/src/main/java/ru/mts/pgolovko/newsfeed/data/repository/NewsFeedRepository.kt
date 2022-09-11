@@ -1,4 +1,4 @@
-package ru.mts.pgolovko.newsfeed.data.repositories
+package ru.mts.pgolovko.newsfeed.data.repository
 
 import ru.mts.pgolovko.newsfeed.data.db.newsfeed.FeedItemEntity
 import ru.mts.pgolovko.newsfeed.data.db.newsfeed.NewsFeedDao
@@ -37,7 +37,7 @@ class NewsFeedRepository @Inject constructor(
 
     private suspend fun getFromDb(): List<FeedItem> = newsFeedDao.getAll().map { it.toDomain() }
 
-    private suspend fun getRemote(): List<FeedItem> = newsFeedApi.getSampleData().feed.shuffled().mapIndexed { id, dto -> dto.toDomain(id) }
+    private suspend fun getRemote(): List<FeedItem> = newsFeedApi.getFeed().feed.shuffled().mapIndexed { id, dto -> dto.toDomain(id) }
 
     private suspend fun updateDb(feed: List<FeedItem>) = newsFeedDao.update(feed.map { it.toEntity() })
 }

@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import ru.mts.pgolovko.newsfeed.data.repositories.NewsFeedRepository
+import ru.mts.pgolovko.newsfeed.data.repository.NewsFeedRepository
 import ru.mts.pgolovko.newsfeed.data.utils.Result
 import javax.inject.Inject
 
