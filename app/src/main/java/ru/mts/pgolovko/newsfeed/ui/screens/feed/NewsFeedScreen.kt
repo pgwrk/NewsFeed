@@ -27,7 +27,7 @@ fun NewsFeedScreen(viewModel: NewsFeedViewModel) {
     val uiState by viewModel.uiState.collectAsState()
 
     NewsFeedScreenContent(uiState) {
-        viewModel.refresh()
+        viewModel.refresh(getCached = false)
     }
 }
 

@@ -3,6 +3,7 @@ package ru.mts.pgolovko.newsfeed.ui.screens.feed
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -19,13 +20,13 @@ class NewsFeedViewModel @Inject constructor(
     val uiState: StateFlow<NewsFeedUiState> = _uiState
 
     init {
-        refresh()
+        refresh(getCached = true)
     }
 
-    fun refresh() {
+    fun refresh(getCached: Boolean) {
         setUiState(NewsFeedUiState.Loading)
-        viewModelScope.launch {
-            when (val result = newsFeedRepository.getFeed()) {
+        viewModelScope.launch(Dispatchers.IO) {
+            when (val result = newsFeedRepository.get(getCached)) {
                 is Result.Success -> setUiState(NewsFeedUiState.Content(feed = result.data))
                 is Result.Error -> setUiState(NewsFeedUiState.Error(errorDescription = result.exception.message ?: ""))
             }
